@@ -57,3 +57,7 @@ void PrintArray(string[] inputStrings, string[] suitedStrings)
     }
 }
 
+int InputArray = InputArraySize();
+string[] inputStrings = InputConsoleStrings(InputArray);
+string[] suitedStrings = CheckingStringsSize(inputStrings);
+PrintArray(inputStrings, suitedStrings);
