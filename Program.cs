@@ -31,3 +31,15 @@ string[] CheckingStringsSize(string[] inputStrings)
     return suitedStrings;
 }
 
+int CountSuitedStrings(string[] strings)
+{
+    int count = 0;
+    foreach (string str in strings)
+    {
+        if (str.Length <= 3)
+            count++;
+    }
+    return count;
+}
+
+
