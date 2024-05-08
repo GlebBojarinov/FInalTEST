@@ -15,3 +15,19 @@ string[] InputConsoleStrings(int InputArray)
     return strings;
 }
 
+string[] CheckingStringsSize(string[] inputStrings)
+{
+    int suitedCount = CountSuitedStrings(inputStrings);
+    string[] suitedStrings = new string[suitedCount];
+    int index = 0;
+    foreach (string str in inputStrings)
+    {
+        if (str.Length <= 3)
+        {
+            suitedStrings[index] = str;
+            index++;
+        }
+    }
+    return suitedStrings;
+}
+
