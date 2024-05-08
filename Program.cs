@@ -42,4 +42,18 @@ int CountSuitedStrings(string[] strings)
     return count;
 }
 
+void PrintArray(string[] inputStrings, string[] suitedStrings)
+{
+    Console.WriteLine("Original strings arrays:");
+    foreach (string str in inputStrings)
+    {
+        Console.WriteLine(str);
+    }
+
+    Console.WriteLine("New count of strings array (strings array length less than 3):");
+    foreach (string str in suitedStrings)
+    {
+        Console.WriteLine(str);
+    }
+}
 
